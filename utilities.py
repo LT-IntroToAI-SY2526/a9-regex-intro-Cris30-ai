@@ -1,5 +1,5 @@
 # some python libraries we'll be using
-import re, string, calendar
+import re, string, calendar,requests
 from wikipedia import WikipediaPage
 from bs4 import BeautifulSoup
 
@@ -16,7 +16,7 @@ def get_page_html(title: str) -> str:
         html of the page
     """
     response = requests.get(
-        "https://en.wikipedia.org/w/api.php&quot;,
+        "https://en.wikipedia.org/w/api.php",
         params={
             "action": "parse",
             "page": title,
