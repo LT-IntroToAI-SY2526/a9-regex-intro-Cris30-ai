@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from typing import List, Match
 from utilities import *
 
-# Assignment 8 Part II
+
 
 
 def get_planet_radius(planet_name: str) -> str:
